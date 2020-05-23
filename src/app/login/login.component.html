@@ -1,0 +1,63 @@
+<div class="login-page">
+    <div class="login-box" style="padding: 0px 40px 0px 0px;">
+        <div class="login-logo">
+            <img style="width: 160px;" src="../../assets/img/iacademia.png"/><a href="../../assets/img/iacademia.png"><b>ZonalDesk</b></a>
+        </div>
+        <div class="card">
+            <div class="card-body login-card-body">
+                <p class="login-box-msg">Sign in to start your session</p>
+
+                <form [formGroup]="loginForm">
+                    <label>Email/Mobile</label>
+                    <div class="input-group mb-3"> 
+                        <input formControlName="email" type="email" class="form-control" placeholder="Enter Email or Mobile" />
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <label>Password</label>
+                    <div class="input-group mb-3">
+                        <input formControlName="password" type="password" class="form-control" placeholder="Password" />
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="rememberMe" />
+                                <label class="custom-control-label" for="rememberMe">Remember me</label>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <button (click)="logIn()" type="submit" class="btn btn-primary btn-block btn-flat">
+                                Sign In
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- <div class="social-auth-links text-center mb-3">
+                    <p>- OR -</p>
+                    <a href="#" class="btn btn-block btn-primary">
+                        <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
+                    </a>
+                    <a href="#" class="btn btn-block btn-danger">
+                        <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
+                    </a>
+                </div> -->
+
+                <p class="mb-1">
+                    <a>I forgot my password</a>
+                </p>
+                <p class="mb-0">
+                    <a [routerLink]="['/register']" class="text-center">Register a new membership</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

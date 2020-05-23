@@ -1,0 +1,104 @@
+<div class="card register-start">
+    <div class="register-box2">
+
+        
+
+        <div class="card">
+            <div class="card-body register-card-body">
+                <div class="two-columns--two-columns--t3o3b">
+                    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()" name="ze" #heroForm="ngForm">
+                        <div class="two-columns-ia__group">
+                            <div class="two-columns-ia__group__section">
+                                Personal Details
+                                <div class="form-group">
+                                    <mat-form-field>
+                                        <mat-label>First Name</mat-label>
+                                        <input matInput formControlName="name" required>
+                                        <mat-error>The input is invalid</mat-error>
+                                    </mat-form-field>
+    
+                                </div>
+                                    <div class="form-group">
+                                        <mat-form-field>
+                                            <mat-label>last Name</mat-label>
+                                            <input matInput formControlName="name" required>
+                                            <mat-error>The input is invalid</mat-error>
+                                        </mat-form-field>
+        
+                                    </div>
+                                    <div class="form-group">
+                                        <mat-form-field>
+                                            <mat-label>Age</mat-label>
+                                            <input matInput formControlName="age">
+                                            <mat-error>The input is invalid</mat-error>
+                                        </mat-form-field>
+                                    </div>
+                                    <mat-form-field>
+                                        <mat-label>Mobile</mat-label>
+                                        <input matInput   formControlName="mobile" >
+                                        <mat-error>The input is invalid</mat-error>
+                                    </mat-form-field>
+                                    <div class="form-group">
+                                        <mat-form-field>
+                                            <mat-label>Choose DoB</mat-label>
+                                            <input matInput [matDatepicker]="picker" formControlName="dob" required>
+                                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                            <mat-datepicker #picker></mat-datepicker>
+                                            <mat-error>The input is invalid</mat-error>
+                                        </mat-form-field>
+                                    </div>
+                        
+                                </div>
+                                <div class="two-columns-ia__group__section">
+                                    Address details
+                                    <div class="form-group">
+                                        <mat-form-field>
+                                            <mat-label>Street</mat-label>
+                                            <input matInput formControlName="street">
+                                            <mat-error>The input is invalid.</mat-error>
+                                        </mat-form-field>
+                                    </div>
+                                        <div class="form-group">
+                                            <mat-form-field>
+                                                <mat-label>City</mat-label>
+                                                <input matInput formControlName="city">
+                                                <mat-error>The input is invalid.</mat-error>
+                                            </mat-form-field>
+                                        </div>
+                                        <div class="form-group">
+                                            <mat-form-field>
+                                                <mat-label>State</mat-label>
+                                                <input matInput formControlName="state">
+                                                <mat-error>The input is invalid.</mat-error>
+                                            </mat-form-field>
+                                        </div>
+                                        <div class="form-group">
+                                            <mat-form-field>
+                                                <mat-label>Pincode</mat-label>
+                                                <input matInput formControlName="zip">
+                                                <mat-error>The input is invalid.</mat-error>
+                                            </mat-form-field>
+                                            
+                                            
+                                        </div>
+                                        <div class="form-group">
+                                            <mat-form-field>
+                                                <mat-label>Email address</mat-label>
+                                                <input matInput formControlName="emailFormCtrl">
+                                                <mat-error>The input is invalid.</mat-error>
+                                            </mat-form-field>
+                                            
+                                            
+                                        </div>
+                                        
+                            
+                                    </div>
+                            </div>
+                            <button data-purpose="profile-basics-submit-button" type="submit" class="btn btn-primary" >SUBMIT</button>
+                                    
+                    </form>
+                   </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
